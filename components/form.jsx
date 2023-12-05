@@ -36,7 +36,7 @@ const LocationForm = () => {
           Enter City:
           <input type="text" value={city} onChange={handleCityChange} />
         </label>
-        <button type="submit">Explore!</button>
+        <button onClick={getData}type="submit">Explore!</button>
       </form>
 
       {latitude && longitude && (
