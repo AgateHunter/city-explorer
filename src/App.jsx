@@ -2,49 +2,52 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import '../components/form'
+import LocationForm from '../components/form'
 
+export default LocationForm;
 
-const MyForm = () => {
-  // State to store form data
-  const [formData, setFormData] = useState({
-    cityName: ''
-  });
+// const MyForm = () => {
+//   // State to store form data
+//   const [formData, setFormData] = useState({
+//     cityName: ''
+//   });
 
-  // Handle form field changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+//   // Handle form field changes
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prevData) => ({
+//       ...prevData,
+//       [name]: value,
+//     }));
+//   };
 
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your logic to handle form submission here
-    console.log('Form submitted:', formData);
-  };
+//   // Handle form submission
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // Add your logic to handle form submission here
+//     console.log('Form submitted:', formData);
+//   };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        City Name:
-        <input
-          type="text"
-          name="cityName"
-          value={formData.citytName}
-          onChange={handleChange}
-        />
-      </label>
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>
+//         City Name:
+//         <input
+//           type="text"
+//           name="cityName"
+//           value={formData.citytName}
+//           onChange={handleChange}
+//         />
+//       </label>
       
-      <br />
-      <button type="submit">Explore!</button>
-    </form>
-  );
-};
+//       <br />
+//       <button type="submit">Explore!</button>
+//     </form>
+//   );
+// };
 
-export default MyForm;
+// export default MyForm;
 
 // function App() {
 //   const [count, setCount] = useState(0)
